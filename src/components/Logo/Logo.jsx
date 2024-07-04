@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import logo from '../../assets/logo.svg'
 
 const DivLogo = styled.div`
+    color: white;
     display: flex;
     font-size: 12px;
     align-items: center;
