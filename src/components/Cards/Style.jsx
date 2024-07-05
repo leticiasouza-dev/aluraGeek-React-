@@ -11,7 +11,7 @@ export const DivCard = styled.div`
     border-radius: 10px;
 
     padding: 8px;
-    gap: 10px;
+   
 
     img{
         width: 176px;
