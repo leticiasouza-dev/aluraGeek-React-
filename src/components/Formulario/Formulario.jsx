@@ -16,6 +16,14 @@ function Formulario(){
         console.log(imagem)
     }
 
+    const aoLimpar = (evento) => {
+        evento.preventDefault();
+
+        setNome('');
+        setValor('');
+        setImagem('');
+    }
+
     return(
         <S.FormularioContainer>
             <h2>Adicionar Produto: </h2>
@@ -29,7 +37,7 @@ function Formulario(){
 
             <S.DivBotoes>
                 <Botoes nome="Guardar" style={{backgroundColor: '#03318C'}} onClick={aoGuardar}/>
-                <Botoes nome='Limpar' style={{backgroundColor: '#fff'}}/>
+                <Botoes nome='Limpar' style={{backgroundColor: '#fff'}} onClick={aoLimpar}/>
             </S.DivBotoes>
             
         </S.FormularioContainer>

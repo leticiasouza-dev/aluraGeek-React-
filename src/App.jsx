@@ -12,7 +12,6 @@ function App() {
      <main>
         <SessaoProdutos/>
         <Formulario/>
-        
      </main>
 
      <Footer/>
