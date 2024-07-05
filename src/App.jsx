@@ -2,7 +2,7 @@ import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
 import Formulario from './components/Formulario/Formulario'
-import ContainerProdutos from './components/ContainerProdutos/ContainerProdutos'
+import SessaoProdutos from './components/SessaoProdutos/SessaoProdutos'
 
 function App() {
   return(
@@ -10,8 +10,9 @@ function App() {
      <Banner/>
      
      <main>
+        <SessaoProdutos/>
         <Formulario/>
-        <ContainerProdutos/>
+        
      </main>
 
      <Footer/>
