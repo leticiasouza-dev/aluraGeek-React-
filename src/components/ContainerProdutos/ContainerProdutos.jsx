@@ -21,10 +21,10 @@ const Container = styled.div`
     }
 `
 
-function ContainerProdutos({valores}){
+function ContainerProdutos({valores, removeCard}){
     return(
         <Container valores={valores}>
-            {valores.map(valor => <Cards nomeProduto={valor.nome} imagem={valor.imagem} valor={valor.valor}/>)}
+            {valores.map(valor => <Cards key={valor.id} id={valor.id} removeCard={removeCard} nomeProduto={valor.nome} imagem={valor.imagem} valor={valor.valor} />)}
         </Container>
     )
 }
