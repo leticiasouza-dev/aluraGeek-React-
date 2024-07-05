@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Cards from '../Cards/Cards'
 
 const Container = styled.div`
-    max-width: 678px;
+    width: 678px;
     height: 971px;
     display: flex;
     justify-content: space-around;
@@ -18,7 +18,6 @@ const Container = styled.div`
         text-align: center;
         width: 300px;
         height: 336px;
-        overflow-x: auto;
     }
 `
 
