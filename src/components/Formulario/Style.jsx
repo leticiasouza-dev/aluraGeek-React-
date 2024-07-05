@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FormularioContainer = styled.form`
-border: 1px solid black;
     width: 472px;
     height: 517px;
 
@@ -17,6 +16,10 @@ border: 1px solid black;
         font-size: 24px;
         text-align: center;
     }
+
+    @media screen and (max-width: 412px) {
+        padding: 0;
+    }
 `
 
 export const DivInputs = styled.div`
@@ -31,3 +34,4 @@ export const DivBotoes = styled.div`
     justify-content: space-around;
 
 `
+

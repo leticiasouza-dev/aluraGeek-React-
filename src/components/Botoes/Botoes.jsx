@@ -6,6 +6,10 @@ const Botao = styled.button`
     border-radius: 15px;
     border: 3px solid #03318C;
     cursor: pointer;
+
+    @media screen and (max-width: 412px) {
+        max-width: 164px;
+    }
 `
 
 function Botoes(){

@@ -5,7 +5,16 @@
 }
 
 main{
+    max-width: 1024px;
     padding: 60px 40px;
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 835px) {
+    main{
+        flex-wrap: wrap-reverse;
+        gap: 1rem;
+        padding: 30px 6px;
+    }
 }

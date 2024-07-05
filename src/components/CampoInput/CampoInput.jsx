@@ -8,7 +8,11 @@ const Input = styled.input`
     outline: none;
     
     cursor: pointer;
-    margin: 1rem
+    margin: 1rem;
+
+    @media screen and (max-width: 412px) {
+        max-width: 350px;
+    }
 `
 
 function CampoInput (){
