@@ -3,7 +3,7 @@ import styled from "styled-components"
 const Input = styled.input`
     width: 392px;
     height: 58px;
-    border: 2px solid #03318c;
+    border: 3px solid #03318c;
     border-radius: 50px;
     outline: none;
     
@@ -15,9 +15,9 @@ const Input = styled.input`
     }
 `
 
-function CampoInput (){
+function CampoInput ({placeholder, type}){
     return(
-        <Input placeholder="oii.." type="text"/>
+        <Input placeholder={placeholder} type={type}/>
     )
 }
 

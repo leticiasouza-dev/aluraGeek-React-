@@ -1,15 +1,15 @@
 import * as S from './Style'
 import { RiDeleteBin5Line } from "react-icons/ri";
 
-function Cards(){
+function Cards({imagem, nomeProduto, valor }){
     return (
         <S.DivCard>
-            <img src="https://avatars.githubusercontent.com/u/119368474?v=4&size=64" alt="" />
+            <img src={imagem} alt="" />
 
-            <p className="nomeProduto">Nome produto</p>
+            <p className="nomeProduto">{nomeProduto}</p>
 
             <S.DivContainer>
-                <p>valor</p>
+                <p>{valor}</p>
                 <RiDeleteBin5Line size={22} />
             </S.DivContainer>
         </S.DivCard>

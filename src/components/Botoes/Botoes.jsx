@@ -12,10 +12,10 @@ const Botao = styled.button`
     }
 `
 
-function Botoes(){
+function Botoes({nome, style}){
     return (
-        <Botao>
-            enviar
+        <Botao style={style}>
+            {nome}
         </Botao>
     )
 }
