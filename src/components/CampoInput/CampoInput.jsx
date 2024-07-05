@@ -15,9 +15,9 @@ const Input = styled.input`
     }
 `
 
-function CampoInput ({placeholder, type}){
+function CampoInput ({placeholder, type, valor, aoDigitar}){
     return(
-        <Input placeholder={placeholder} type={type}/>
+        <Input placeholder={placeholder} type={type} required value={valor} onChange={aoDigitar}/>
     )
 }
 

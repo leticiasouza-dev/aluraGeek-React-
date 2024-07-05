@@ -12,9 +12,9 @@ const Botao = styled.button`
     }
 `
 
-function Botoes({nome, style}){
+function Botoes({nome, style, onClick}){
     return (
-        <Botao style={style}>
+        <Botao style={style} onClick={onClick}>
             {nome}
         </Botao>
     )
