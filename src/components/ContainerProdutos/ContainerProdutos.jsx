@@ -1,8 +1,8 @@
-import Cards from '../Cards/Cards';
 import styled from 'styled-components';
+import Cards from '../Cards/Cards'
 
 const Container = styled.div`
-    width: 678px;
+    max-width: 678px;
     height: 971px;
     display: flex;
     justify-content: space-around;
@@ -14,6 +14,12 @@ const Container = styled.div`
     padding: 15px;
     box-shadow: -12px 10px 5.8px 0px #00000040;
 
+    @media screen and (max-width: 835px) {
+        text-align: center;
+        width: 300px;
+        height: 336px;
+        overflow-x: auto;
+    }
 `
 
 function ContainerProdutos(){

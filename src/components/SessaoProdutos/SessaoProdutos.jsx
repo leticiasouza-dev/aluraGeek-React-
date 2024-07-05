@@ -14,13 +14,23 @@ const SessaoDosProdutos = styled.section`
     .tituloProdutos{
         margin-bottom: 2rem;
     }
+
+    @media screen and (max-width: 835px) {
+        padding: 0;
+
+        .tituloProdutos{
+            text-align: center;
+            white-space: nowrap;
+            
+        }
+    }
     
 `
 
 function SessaoProdutos(){
     return (
         <SessaoDosProdutos >
-            <h2 className='tituloProdutos'>Meus produtos</h2>
+            <h2 className='tituloProdutos'>Meus produtos:</h2>
             <ContainerProdutos/>
         </SessaoDosProdutos>
     )
