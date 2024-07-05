@@ -24,7 +24,7 @@ const Container = styled.div`
 function ContainerProdutos({valores}){
     return(
         <Container valores={valores}>
-            {console.log(valores)}
+            {valores.map(valor => <Cards nomeProduto={valor.nome} imagem={valor.imagem} valor={valor.valor}/>)}
         </Container>
     )
 }
