@@ -4,16 +4,19 @@ import Botoes from '../Botoes/Botoes';
 import * as S from './Style';
 import { useState } from 'react';
 
-function Formulario(){
+function Formulario({onSubmit}){
     const [nome, setNome] = useState('')
     const [valor, setValor] = useState();
     const [imagem, setImagem] = useState('');
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        onSubmit({ nome, valor, imagem });
+      };
+
     const aoGuardar  = (evento) => {
         evento.preventDefault();
-        console.log(nome)
-        console.log(valor)
-        console.log(imagem)
+        handleSubmit(evento);
     }
 
     const aoLimpar = (evento) => {
@@ -25,7 +28,7 @@ function Formulario(){
     }
 
     return(
-        <S.FormularioContainer>
+        <S.FormularioContainer onSubmit={handleSubmit}>
             <h2>Adicionar Produto: </h2>
 
             <S.DivInputs>

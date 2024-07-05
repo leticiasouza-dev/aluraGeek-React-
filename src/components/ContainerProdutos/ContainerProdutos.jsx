@@ -21,9 +21,10 @@ const Container = styled.div`
     }
 `
 
-function ContainerProdutos(){
+function ContainerProdutos({valores}){
     return(
-        <Container>
+        <Container valores={valores}>
+            {console.log(valores)}
         </Container>
     )
 }

@@ -27,11 +27,11 @@ const SessaoDosProdutos = styled.section`
     
 `
 
-function SessaoProdutos(){
+function SessaoProdutos({valores}){
     return (
-        <SessaoDosProdutos >
+        <SessaoDosProdutos>
             <h2 className='tituloProdutos'>Meus produtos:</h2>
-            <ContainerProdutos/>
+            <ContainerProdutos valores={valores}/>
         </SessaoDosProdutos>
     )
 }
