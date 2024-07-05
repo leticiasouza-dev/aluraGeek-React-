@@ -9,7 +9,7 @@ function Cards({imagem, nomeProduto, valor }){
             <p className="nomeProduto">{nomeProduto}</p>
 
             <S.DivContainer>
-                <p>{valor}</p>
+                <p>{`R$:${valor},00`}</p>
                 <RiDeleteBin5Line size={22} />
             </S.DivContainer>
         </S.DivCard>

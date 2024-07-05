@@ -17,6 +17,10 @@ function Formulario({onSubmit}){
     const aoGuardar  = (evento) => {
         evento.preventDefault();
         handleSubmit(evento);
+
+        setNome('');
+        setValor('');
+        setImagem('');
     }
 
     const aoLimpar = (evento) => {
