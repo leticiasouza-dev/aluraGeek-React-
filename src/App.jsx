@@ -2,8 +2,7 @@ import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
 import Cards from './components/Cards/Cards'
-import CampoInput from './components/CampoInput/CampoInput'
-import Botoes from './components/Botoes/Botoes'
+import Formulario from './components/Formulario/Formulario'
 
 function App() {
   return(
@@ -12,8 +11,7 @@ function App() {
      
      <main>
         <Cards/>
-        <CampoInput/>
-        <Botoes/>
+        <Formulario/>
      </main>
 
      <Footer/>

@@ -3,3 +3,8 @@
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
 }
+
+main{
+    padding: 60px 40px;
+
+}
